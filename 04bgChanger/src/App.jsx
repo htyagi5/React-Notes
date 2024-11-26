@@ -27,7 +27,7 @@ function App() {
    const [color,setcolor]=useState("black")
 
   return (
-    <div className="w-full h-screen" style={{backgroundColor: color}}>  {/* this is the syntax and responsible for implementing state */}
+    <div className="w-full h-screen flex place-content-center" style={{backgroundColor: color}}>  {/* this is the syntax and responsible for implementing state */}
        <div className='bg-gray-600  fixed {/*w-full */} bottom-0 flex gap-4 place-content-center justify-evenly flex-wrap p-5  rounded-lg ' >
         <button  className="bg-green-400 rounded-lg p-2 hover:bg-white"  onClick={()=>setcolor("green")} 
      /*    this is the concept that onclick contain a function not only the reference  we can do so but but avoid it it also work also with "()"contain value to pass */id="green">GREEN</button>
