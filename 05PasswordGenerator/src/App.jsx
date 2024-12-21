@@ -20,7 +20,7 @@ const PasswordGenerator=useCallback(()=>{
   if(NumberAllowed) str+="123456789"
   if(CharacterAllowed) str+="!@#$%^&*()_+-{}[]:;'./?<>,|/"
   for(let i=1;i<=length;i++){
- let  char=Math.floor(Math.random()*str.length+1)
+ let  char=Math.floor(Math.random()*str.length+1)//isse character nhi ayya balki index ayya hai ki konsa chacter lena hai
   pass+=str.charAt(char)
   }
   setpassword(pass)
@@ -30,7 +30,7 @@ const PasswordGenerator=useCallback(()=>{
 
 //To copy
 const PasswordCopy=useCallback(()=>{
-  passwordRef.current?.select()  //higlight the text that is being copied and ? represent we select optionally because somehow text is nul then it cannt select
+  passwordRef.current?.select()  //highlight the text that is being copied and ? represent we select optionally because somehow text is nul then it cannt select
   passwordRef.current?.setSelectionRange(0,20)  //it basically provide a range to which we want to select 
   window.navigator.clipboard.writeText(password)
 },[password]
