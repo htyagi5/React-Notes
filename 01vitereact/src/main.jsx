@@ -1,6 +1,6 @@
 //main.jsx render the app.jsx html
 import { createElement, StrictMode } from 'react'  //core library of react
-// import React, { StrictMode } from 'react';  //only require to imlement reactElement
+import React, { StrictMode } from 'react';  //only require to imlement reactElement
 import { createRoot } from 'react-dom/client'  //library for implementation project on web 
 import App from './App.jsx'
 
@@ -13,16 +13,16 @@ function MyApp(){
   )
 }
 
-// const reactElement=React.createElement(
-//   'a',
-//   {href: "https://google.com",target:"_blank"},
-//   'VISIT GOOGLE'
-// )
+const reactElement=React.createElement(
+  'a',
+  {href: "https://google.com",target:"_blank"},
+  'VISIT GOOGLE'
+)
 
 
-// const anotherElement=(
-//   <a href="https://google.com" target='_blank'>VISIT GOOGLE</a>
-// )
+const anotherElement=(
+  <a href="https://google.com" target='_blank'>VISIT GOOGLE</a>
+)
 
 
 createRoot(document.getElementById('root')).render(

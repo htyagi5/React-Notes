@@ -2,8 +2,20 @@
 //1.  useCallback -->used if we want to run some method like here function  PassGeneratornumber checkbox clickk karne pe run and character check karne pe run again
 //bassically it  uses the concept of memorization mean it put the thing in cache memory
 
+// useCallback is a React Hook that lets you cache a function definition between re-renders.
+
+// const cachedFn = useCallback(fn, dependencies)
+
 //2. useEffect -->is used because there no way we can run the method here because there işno button and so to run passGenerator
 //3.  useRef -->used to take the reference mean it join two indenpendent thing like here linking the password text written in input text and button
+// useEffect is a React Hook that lets you synchronize a component with an external system.
+
+// useEffect(setup, dependencies?)
+
+//4. useRef is a React Hook that lets you reference a value that’s not needed for rendering.
+
+// const ref = useRef(initialValue)
+
 import { useCallback, useEffect, useState,useRef } from 'react'
 
 
@@ -30,7 +42,7 @@ const PasswordGenerator=useCallback(()=>{
 
 //To copy
 const PasswordCopy=useCallback(()=>{
-  passwordRef.current?.select()  //highlight the text that is being copied and ? represent we select optionally because somehow text is nul then it cannt select
+  passwordRef.current?.select()  //highlight the text that is being copied and ? represent we select optionally because somehow text is null then it cannt select
   passwordRef.current?.setSelectionRange(0,20)  //it basically provide a range to which we want to select 
   window.navigator.clipboard.writeText(password)
 },[password]

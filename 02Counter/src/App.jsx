@@ -1,4 +1,8 @@
 // //LEARNING Basics of Hooks (real magic of react ->updating a variable everywhere in UI)
+// useState is a React Hook that lets you add a state variable to your component.
+
+// const [state, setState] = useState(initialState)
+
 
 import { useState } from 'react'
 import './App.css'

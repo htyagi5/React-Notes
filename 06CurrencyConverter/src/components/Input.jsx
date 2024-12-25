@@ -1,4 +1,5 @@
 //useId is a new hook ->jab hum kisi input ko tap tap karke select karte hai if we want ki unique id generate ho then we use it
+// useId is a React Hook for generating unique IDs that can be passed to accessibility attributes.
 import React,{useId} from 'react'
 
 function InputBox({
