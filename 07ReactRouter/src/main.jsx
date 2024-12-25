@@ -45,7 +45,8 @@ const router=createBrowserRouter(//createBrowserRouter is a method for establish
    <Route path='' element={<Home/>} />
    <Route path='about' element={<About/>} />
    <Route path='contact' element={<Contact/>} />
-   <Route path='user/:userId' element={<User/>} />
+   <Route path='user/:userId' element={<User/>} /> 
+   {/* //http://localhost:5173/user/123  for directing this page */}
    <Route
      loader={GithubInfoLoader}//optimised method which loads the info from api as soon we put our cursor over the 
      // Header's Github means it destroy the lag earlier
