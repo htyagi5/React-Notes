@@ -19,7 +19,7 @@ function App() {
      {/* <Card arr={myArr}/> */}
      <Card userName="Harshit" />
      <br />
-     <Card userName="BOYS" btntext="Let's go"/>
+     <Card userName="BOYS" btntext="Let's go" />
     </>
   )
 }

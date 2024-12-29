@@ -1,6 +1,6 @@
 //main.jsx render the app.jsx html
 import { createElement, StrictMode } from 'react'  //core library of react
-import React, { StrictMode } from 'react';  //only require to imlement reactElement
+import React from 'react';  //only require to imlement reactElement
 import { createRoot } from 'react-dom/client'  //library for implementation project on web 
 import App from './App.jsx'
 
